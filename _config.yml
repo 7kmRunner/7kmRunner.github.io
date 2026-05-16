@@ -1,7 +1,7 @@
-name: "Minrain"
-description: "经济、算法、网络、无线充电与智能穿戴"
+name: "Minrain's blog"
+description: "记录学习与生活"
 
-avatar: /images/avatar.svg
+avatar:
 favicon: 
 
 navigation:
@@ -13,6 +13,8 @@ navigation:
     url: /research
   - name: 项目集
     url: /projects
+  - name: 发表论文
+    url: /papers
   - name: 分类
     url: /tags
 

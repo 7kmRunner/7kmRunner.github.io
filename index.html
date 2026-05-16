@@ -1,66 +1,23 @@
 ---
 layout: default
 ---
-
-<section class="home-hero">
-  <p class="eyebrow">Minrain's Lab</p>
-  <h1>在数学、计算机与现实世界之间做长期记录。</h1>
-  <p class="hero-intro">
-    我关注经济、算法、网络、无线充电与智能穿戴。这里既是学习笔记，也是把课程、项目和观察慢慢整理成体系的地方。
-  </p>
-  <div class="hero-actions">
-    <a href="{{ site.baseurl }}/research/" class="button-primary">研究兴趣</a>
-    <a href="{{ site.baseurl }}/projects/" class="button-secondary">项目集</a>
-  </div>
-</section>
-
-<section class="interest-strip" aria-label="关注方向">
-  <a href="{{ site.baseurl }}/research/#economics">经济</a>
-  <a href="{{ site.baseurl }}/research/#algorithms">算法</a>
-  <a href="{{ site.baseurl }}/research/#networks">网络</a>
-  <a href="{{ site.baseurl }}/research/#wireless-charging">无线充电</a>
-  <a href="{{ site.baseurl }}/research/#wearables">智能穿戴</a>
-</section>
-
-<section class="home-section">
-  <div class="section-heading">
-    <p class="eyebrow">Selected</p>
-    <h2>正在形成的知识地图</h2>
-  </div>
-  <div class="feature-grid">
-    <a class="feature-card" href="{{ site.baseurl }}/research/#economics">
-      <span>01</span>
-      <h3>经济与商业观察</h3>
-      <p>用读书、行业案例和周期视角理解现实中的分配、杠杆与商业模式。</p>
-    </a>
-    <a class="feature-card" href="{{ site.baseurl }}/research/#algorithms">
-      <span>02</span>
-      <h3>算法基础</h3>
-      <p>从排序、图论、动态规划到随机算法，持续把课程知识整理成可复用笔记。</p>
-    </a>
-    <a class="feature-card" href="{{ site.baseurl }}/research/#networks">
-      <span>03</span>
-      <h3>网络与系统</h3>
-      <p>围绕计算机网络、数据库和网络安全，搭建更扎实的系统理解。</p>
-    </a>
-    <a class="feature-card" href="{{ site.baseurl }}/research/#wearables">
-      <span>04</span>
-      <h3>无线充电与智能穿戴</h3>
-      <p>关注设备形态、能量传输、传感交互，以及它们如何进入日常生活。</p>
-    </a>
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading">
-    <p class="eyebrow">Posts</p>
-    <h2>最近文章</h2>
-  </div>
-
-  <div class="search-container">
-    <input type="text" id="search-input" placeholder="搜索文章...">
-    <ul id="results-container"></ul>
-  </div>
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="search blog posts..." style="width: 90%;
+    height: 35px;
+    color: #333;
+    background-color: rgba(227,231,236,.2);
+    line-height: 35px;
+    margin-top: 20px;
+    padding:10px 16px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 17px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
+  <ul id="results-container"></ul>
+</div>
 
 <!--script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script-->
 <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
@@ -115,7 +72,6 @@ layout: default
   {% endunless %}
   {% endfor %}
 </div>
-</section>
 
 <div class="pagination">
   {% if paginator.previous_page %}
