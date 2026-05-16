@@ -1,7 +1,7 @@
-name: "Minrain's blog"
-description: "记录学习与生活"
+name: "Minrain"
+description: "经济、算法、网络、无线充电与智能穿戴"
 
-avatar: 
+avatar: /images/avatar.svg
 favicon: 
 
 navigation:
@@ -9,6 +9,10 @@ navigation:
     url: /
   - name: 关于
     url: /about
+  - name: 研究兴趣
+    url: /research
+  - name: 项目集
+    url: /projects
   - name: 分类
     url: /tags
 
@@ -61,4 +65,3 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-
