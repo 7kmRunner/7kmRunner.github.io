@@ -398,30 +398,53 @@ img {
 
 .navlist{
   text-align:center;
+  padding: 0 28px;
 }
 
 nav {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $base-font;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 
   @include mobile {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
     margin-top: 9px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
-    margin: 0 10px;
-    text-align: right;
+    display: block;
+    margin: 0;
+    padding: 6px 8px;
+    text-align: center;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0;
+    border: 1px solid $divider-color;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .45);
 
     @include mobile {
-      margin: 0 10px;
+      margin: 0;
+      padding: 4px 8px;
       color: $link-color;
     }
+
+    &:hover {
+      background-color: $link-bghv-color;
+      border-color: $link-lighten-color;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -725,5 +748,3 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 //@import "gitalk";
-
-
